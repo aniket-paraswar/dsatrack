@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 function LandingPage() {
   return (
-    <div className="App">
+    <div className="landing">
       <Navbar />
       <HeroSection />
       <FeaturesSection />

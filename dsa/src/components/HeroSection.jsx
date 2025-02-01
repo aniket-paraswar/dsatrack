@@ -13,7 +13,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="bg-blue-100 py-20">
+    <section ref={heroRef} className="bg-custom-blue py-20">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold text-gray-800">
           Master Data Structures & Algorithms
