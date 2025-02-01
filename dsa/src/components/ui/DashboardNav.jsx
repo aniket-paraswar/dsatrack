@@ -47,7 +47,7 @@ const DashboardNav = ({ onMenuClick }) => {
           </li>
           <li className="flex items-center space-x-2 hover:text-blue-600 transition duration-300" onClick={() => onMenuClick("challenge")}>
             <FaShieldAlt className="text-xl text-green-500" />
-            <span>Challenge</span>
+            <span>Visualize</span>
           </li>
           <li className="flex items-center space-x-2 hover:text-blue-600 transition duration-300" onClick={() => onMenuClick("goals")}>
             <FaBullseye className="text-xl text-purple-500" />
