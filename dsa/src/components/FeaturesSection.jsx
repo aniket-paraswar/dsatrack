@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import Spline from "@splinetool/react-spline";
+
 
 const features = [
   {
@@ -40,7 +42,13 @@ const FeaturesSection = () => {
   };
 
   return (
+
     <section id="features" className="py-16 bg-white">
+       <Spline
+        scene="https://prod.spline.design/IFvfu62f8vpvlUKT/scene.splinecode"
+        width={1039}
+        height={590}
+      />
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800">
           Why Choose Us?

@@ -60,6 +60,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button className="text-white text-2xl">☰</button>
         </div>
+        
       </div>
     </nav>
   );
