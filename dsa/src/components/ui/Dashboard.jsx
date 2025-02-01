@@ -39,14 +39,14 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-gray-100">
       {/* Navbar Section */}
-      <div className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+      <div className="bg-none fixed w-full ">
         <DashboardNav onMenuClick={handleMenuClick} />
       </div>
 
       {/* Content Section */}
-      <div className="flex-1 mt-16 p-4 overflow-auto">
+      <div className="flex-1 mt-16 p-4 overflow-hidden">
         {renderContent()}
       </div>
     </div>

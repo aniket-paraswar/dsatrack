@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import {
+  FaCode,
   FaHome,
   FaEnvelope,
   FaTrophy,
@@ -22,11 +23,11 @@ const DashboardNav = ({ onMenuClick }) => {
   }, []);
 
   return (
-    <nav ref={navRef} className="bg-white shadow-md">
+    <nav ref={navRef} className="bg-purple shadow-md">
       <div className="container mx-auto flex justify-between items-center px-6 py-3">
         {/* Logo with Code Icon */}
         <div className="flex items-center space-x-2 text-blue-600">
-          <FaHome className="text-3xl" />
+          <FaCode className="text-3xl" />
           <h1 className="text-2xl font-bold">Code Quest</h1>
         </div>
 
