@@ -26,12 +26,13 @@ const HeroSection = () => {
         </div>
 
         {/* Second Column - Spline Model 2 */}
-        <div className="w-full max-w-lg mx-auto">
-          <Spline
-            scene="https://prod.spline.design/2ddTVdAge0to-UPC/scene.splinecode"
-            className="w-full h-100"  // Adjust height to make the model properly visible
-          />
-        </div>
+        <div className="w-full max-w-lg mx-auto mb-8 md:mb-0">
+  <Spline
+    scene="https://prod.spline.design/2ddTVdAge0to-UPC/scene.splinecode"
+    className="w-full h-auto"  // Adjust height as needed
+  />
+</div>
+        
       </div>
 
       {/* Text and Join Us Button */}
