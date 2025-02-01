@@ -4,10 +4,10 @@ import DashboardNav from "./DashboardNav";
 import Home from "./Home";
 import Messages from "./Messages";
 import Challenges from "./Challanges";
-import Goals from "./Goals";
 import DCC from "./DCC";
 import Sheets from "./Sheets";
 import Global from "./Global";
+import Discuss from "./Discuss";
 
 const Dashboard = () => {
   // State to track selected page
@@ -28,8 +28,6 @@ const Dashboard = () => {
         return <Global />;
       case "challenge":
         return <Challenges />;
-      case "goals":
-        return <Goals />;
       case "dcc":
         return <DCC />;
       case "sheets":
