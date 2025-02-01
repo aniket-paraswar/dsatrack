@@ -2,7 +2,13 @@ import React from 'react'
 
 const Challanges = () => {
   return (
-    <div>Challanges</div>
+    <iframe
+        src="https://suaebahmed.github.io/algorithms-visualizer/#/sorting"
+        width="100%"
+        height="600px"
+        title="Algorithm Visualizer"
+        style={{ border: 'none' }}
+      />
   )
 }
 
