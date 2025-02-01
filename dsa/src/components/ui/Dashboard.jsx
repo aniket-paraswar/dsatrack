@@ -7,6 +7,7 @@ import Challenges from "./Challanges";
 import Goals from "./Goals";
 import DCC from "./DCC";
 import Sheets from "./Sheets";
+import Global from "./Global";
 
 const Dashboard = () => {
   // State to track selected page
@@ -24,7 +25,7 @@ const Dashboard = () => {
       case "messages":
         return <Messages />;
       case "global":
-        return <Challenges />;
+        return <Global />;
       case "challenge":
         return <Challenges />;
       case "goals":
