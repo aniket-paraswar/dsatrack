@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
+import { FaHome, FaInfoCircle, FaCogs, FaEnvelope, FaSignInAlt } from "react-icons/fa"; // Importing React Icons
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -25,34 +26,56 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-white">DSA Mastery</h1>
+        <h1 className="text-3xl font-bold text-white hover:text-[#C5BAFF] transition duration-300">
+          Code Quest
+        </h1>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex space-x-6 text-white font-medium">
+        <ul className="hidden md:flex space-x-8 text-white font-medium">
           <li>
-            <a href="#home" className="hover:text-[#C5BAFF] transition duration-300">
-              Home
+            <a
+              href="#home"
+              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+            >
+              <FaHome size={22} />
+              <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-[#C5BAFF] transition duration-300">
-              About
+            <a
+              href="#about"
+              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+            >
+              <FaInfoCircle size={22} />
+              <span>About</span>
             </a>
           </li>
           <li>
-            <a href="#features" className="hover:text-[#C5BAFF] transition duration-300">
-              Features
+            <a
+              href="#features"
+              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+            >
+              <FaCogs size={22} />
+              <span>Features</span>
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-[#C5BAFF] transition duration-300">
-              Contact
+            <a
+              href="#contact"
+              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+            >
+              <FaEnvelope size={22} />
+              <span>Contact</span>
             </a>
           </li>
         </ul>
 
         {/* Animated Shimmer Button */}
-        <button className="shimmer-button hidden md:block" onClick={handleSignIn}>
+        <button
+          className="hidden md:block py-2 px-4 bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-blue-600 transition duration-300"
+          onClick={handleSignIn}
+        >
+          <FaSignInAlt size={18} className="mr-2" />
           Sign In
         </button>
 
