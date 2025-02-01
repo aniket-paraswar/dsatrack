@@ -7,7 +7,6 @@ import Challenges from "./Challanges";
 import DCC from "./DCC";
 import Sheets from "./Sheets";
 import Global from "./Global";
-import Discuss from "./Discuss";
 
 const Dashboard = () => {
   // State to track selected page
