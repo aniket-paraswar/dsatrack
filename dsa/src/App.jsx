@@ -9,7 +9,6 @@ import Messages from "./components/ui/Messages";
 import Sheets from "./components/ui/Sheets";
 import Challanges from "./components/ui/Challanges";
 import DCC from "./components/ui/DCC";
-import Discuss from "./components/ui/Discuss";
 
 function App() {
   return (
