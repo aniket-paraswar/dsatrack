@@ -38,7 +38,6 @@ const DashboardNav = ({ onMenuClick }) => {
             { label: "Messages", icon: <FaEnvelope className="text-red-400" />, section: "messages" },
             { label: "Global", icon: <FaTrophy className="text-yellow-400" />, section: "global" },
             { label: "Visualize", icon: <FaShieldAlt className="text-green-400" />, section: "challenge" },
-            { label: "Discuss", icon: <FaBullseye className="text-purple-400" />, section: "goals" },
             { label: "DCC", icon: <FaCalendarCheck className="text-orange-400" />, section: "dcc" },
             { label: "Sheets", icon: <FaGraduationCap className="text-indigo-400" />, section: "sheets" },
           ].map((item, index) => (

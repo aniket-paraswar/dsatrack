@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
-import { FaHome, FaInfoCircle, FaCogs, FaEnvelope, FaSignInAlt } from "react-icons/fa"; // Importing React Icons
+import { FaCode,FaHome, FaInfoCircle, FaCogs, FaEnvelope, FaSignInAlt } from "react-icons/fa"; 
 
 const Navbar = () => {
   const navRef = useRef(null);
@@ -22,20 +22,23 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md shadow-md py-4 z-50"
+      className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md shadow-md py-4 z-50"
     >
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <h1 className="text-3xl font-bold text-white hover:text-[#C5BAFF] transition duration-300">
+        <div className="flex"><FaCode className="text-blue-600 text-4xl mr-2" />
+        <h1 className="text-3xl font-bold text-gray-900 hover:text-[#6A5ACD] transition duration-300">
           Code Quest
         </h1>
+        </div>
+        
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex space-x-8 text-white font-medium">
+        <ul className="hidden md:flex space-x-8 text-gray-800 font-medium">
           <li>
             <a
               href="#home"
-              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+              className="flex items-center space-x-2 hover:text-[#6A5ACD] transition duration-300"
             >
               <FaHome size={22} />
               <span>Home</span>
@@ -44,7 +47,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+              className="flex items-center space-x-2 hover:text-[#6A5ACD] transition duration-300"
             >
               <FaInfoCircle size={22} />
               <span>About</span>
@@ -53,7 +56,7 @@ const Navbar = () => {
           <li>
             <a
               href="#features"
-              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+              className="flex items-center space-x-2 hover:text-[#6A5ACD] transition duration-300"
             >
               <FaCogs size={22} />
               <span>Features</span>
@@ -62,7 +65,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="flex items-center space-x-2 hover:text-[#C5BAFF] transition duration-300"
+              className="flex items-center space-x-2 hover:text-[#6A5ACD] transition duration-300"
             >
               <FaEnvelope size={22} />
               <span>Contact</span>
@@ -70,20 +73,19 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Animated Shimmer Button */}
+        {/* Animated Gradient Button */}
         <button
-          className="hidden md:block py-2 px-4 bg-gradient-to-r from-purple-500 via-indigo-600 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:from-purple-600 hover:to-blue-600 transition duration-300"
+          className="hidden md:flex items-center gap-2 py-2 px-6 bg-gradient-to-r from-[#6A5ACD] to-[#4A90E2] text-white font-semibold rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
           onClick={handleSignIn}
         >
-          <FaSignInAlt size={18} className="mr-2" />
+          <FaSignInAlt size={18} />
           Sign In
         </button>
 
         {/* Mobile Menu */}
-        <div className="md:hidden">
-          <button className="text-white text-2xl">☰</button>
-        </div>
-        
+        <button className="md:hidden text-gray-900 text-3xl hover:text-[#6A5ACD] transition duration-300">
+          ☰
+        </button>
       </div>
     </nav>
   );
